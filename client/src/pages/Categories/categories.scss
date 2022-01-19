@@ -1,0 +1,43 @@
+.categoriesContainer {
+  //   padding: 10px;
+  height: 80vh;
+  display: flex;
+
+  .category {
+    position: relative;
+    flex: 1;
+    margin: 15px;
+
+    // height: 100%;
+
+    .categoryImg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .categoryTitle {
+      color: white;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .categoryBtn {
+      padding: 5px 10px;
+      border: none;
+      font-size: 16px;
+      font-weight: bolder;
+    }
+
+    .categoryDescPos {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

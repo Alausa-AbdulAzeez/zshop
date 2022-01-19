@@ -1,0 +1,151 @@
+@import "../../app.scss";
+
+.footerContainer {
+  height: 30vh;
+  display: flex;
+  background-color: rgba(211, 211, 211, 0.26);
+  height: max-content;
+
+  @include mobile {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .footerLeft {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+
+    .footerLeftHeader {
+      margin-bottom: 15px;
+      font-weight: bold;
+      font-size: large;
+    }
+
+    .footerLeftInfo {
+      margin-bottom: 10px;
+    }
+
+    .footerLeftSocials {
+      display: flex;
+      .fb {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ig {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgb(133, 28, 50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .tw {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: lightskyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pt {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgb(155, 8, 8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      span {
+        margin-right: 10px;
+        cursor: pointer;
+        color: white;
+        // color: #d8204e;
+      }
+    }
+  }
+  .footerCenter {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+
+    @include mobile {
+      display: none;
+    }
+
+    .footerCenterHeading {
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+  }
+
+  .footerCenterLinks {
+    display: flex;
+
+    .leftLinks {
+      margin-right: 100px;
+    }
+
+    li {
+      list-style-type: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  }
+
+  .footerRight {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+
+    .footerRightHeadinfo {
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .address {
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      .addressIcon {
+        margin-right: 10px;
+      }
+    }
+    .contact {
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      .contactIcon {
+        margin-right: 10px;
+      }
+    }
+    .email {
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      .emailIcon {
+        margin-right: 10px;
+      }
+    }
+    .paymentOptionsImage {
+      width: 50%;
+      height: 50px;
+      margin-left: -15px;
+    }
+  }
+}

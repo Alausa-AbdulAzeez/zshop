@@ -1,0 +1,201 @@
+@import "../../app.scss";
+
+.cart {
+  min-height: 100vh;
+
+  .cartContainer {
+    padding: 10px;
+    margin: 20px;
+    .cartTitle {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: gray;
+      text-align: center;
+      width: 100%;
+    }
+    .cartTop {
+      display: flex;
+      height: 10vh;
+      align-items: center;
+      justify-content: space-between;
+
+      .continueBtn {
+        padding: 10px;
+        cursor: pointer;
+        background: transparent;
+        color: black;
+        border: 1px solid gray;
+        outline: none;
+
+        &:hover {
+          background: black;
+          color: white;
+        }
+
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+      .middleLinks {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: gray;
+        text-align: center;
+        // width: 100%;
+        // font-size: 14px;
+        // cursor: pointer;
+        // text-decoration: underline;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+      .checkoutBtn {
+        padding: 10px;
+        cursor: pointer;
+        background: black;
+        color: white;
+        border: 1px solid gray;
+        outline: none;
+
+        &:hover {
+          background: transparent;
+          color: black;
+        }
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+    .cartBottom {
+      display: flex;
+
+      .cartItems {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex: 2;
+
+        .cartItem {
+          box-shadow: 0 0 10px rgb(211, 208, 208);
+          cursor: pointer;
+          display: flex;
+          height: 20vh;
+          width: 90%;
+          margin-bottom: 15px;
+
+          @include mobile {
+            font-size: 14px;
+            margin-bottom: 20px;
+            width: 100%;
+          }
+          .productImg {
+            height: 80%;
+            align-self: center;
+            .cartImg {
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .productDetailsContainer {
+            padding: 0 30px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            @include mobile {
+              padding: 0 10px;
+            }
+
+            .productDetails {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+              .productColor {
+                height: 20px;
+                width: 20px;
+                // background: #000;
+                border-radius: 50%;
+              }
+            }
+
+            .productAmount {
+              margin-right: 100px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+
+              @include mobile {
+                margin-right: 0px;
+              }
+            }
+          }
+
+          &:hover {
+            background-color: rgba(192, 189, 189, 0.486);
+          }
+        }
+      }
+
+      .cartInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 50vh;
+        flex: 1;
+        // border: 1px solid gray;
+        box-shadow: 0 0 10px rgb(211, 208, 208);
+        border-radius: 10px;
+        padding: 30px;
+        color: gray;
+
+        @include mobile {
+          font-size: 14px;
+          height: 3000px;
+          height: 100vh;
+        }
+
+        .title {
+          font-weight: 200;
+          color: gray;
+
+          @include mobile {
+            text-align: center;
+            margin-bottom: 15px;
+          }
+        }
+        .orderInfo {
+          display: flex;
+          justify-content: space-between;
+
+          @include mobile {
+            margin-bottom: 15px;
+          }
+        }
+        .total {
+          color: #000;
+          font-weight: bold;
+        }
+        .cartInfoBtn {
+          padding: 10px;
+          color: white;
+          background: black;
+
+          &:hover {
+            color: black;
+            background: transparent;
+          }
+        }
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+  }
+}

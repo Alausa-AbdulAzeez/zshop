@@ -1,0 +1,47 @@
+.newsLetterContainer {
+  height: 60vh;
+  background-color: rgba(241, 209, 167, 0.281);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .newsLetterHeading {
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 70px;
+  }
+
+  .newsLetterSubHeading {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+
+  .newsLetterInput {
+    height: 50px;
+    width: 40vw;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+
+    input {
+      border: none;
+      margin-left: 10px;
+      width: 80%;
+    }
+    .emailInput:focus {
+      outline: none;
+      border: none;
+    }
+
+    .inputIcon {
+      background-color: teal;
+      width: 50px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+  }
+}
